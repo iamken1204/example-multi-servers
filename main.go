@@ -11,10 +11,12 @@ func main() {
 	finish := make(chan bool)
 
 	server8001 := http.NewServeMux()
+	server8001.HandleFunc("/", news.Index)
 	server8001.HandleFunc("/foo", news.Foo)
 	server8001.HandleFunc("/bar", news.Bar)
 
 	server8002 := http.NewServeMux()
+	server8002.HandleFunc("/", site.Index)
 	server8002.HandleFunc("/foo", site.Foo)
 	server8002.HandleFunc("/bar", site.Bar)
 
