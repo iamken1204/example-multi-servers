@@ -1,4 +1,4 @@
-# Example of multiple servers implemented by golang
+# Example of golang multiple servers
 How to use:   
 ```
 $ go get github.com/iamken1204/example-multi-servers
